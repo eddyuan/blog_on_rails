@@ -1,18 +1,8 @@
 <p style="color: green"><%= notice %></p>
 
 <h1 class="my-4">Posts</h1>
-
 <div id="posts" class="row">
   <% @posts.each do |post| %>
-    <div class="col-md-12 col-lg-6 col-xl-4 mb-3">
-      <%= link_to post, class:"card-link" do %>
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-primary"><%= post.title %></h5>
-              <p class="card-text ellipsis-4"><%= post.body %></p>
-          </div>
-        </div>
-      <% end %>
-    </div>
+    <%= render post %>
   <% end %>
 </div>

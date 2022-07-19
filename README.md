@@ -57,19 +57,26 @@ end
 
 `bundle install`
 
+Add seeder in `seeder.rb`
+
+run `rails db:seed`
+(You can also `rails db:reset` to reset)
+
 ### Add boostrap
 
 ###### `Gemfile`
 
-```
+```rb
 gem 'bootstrap', '~> 5.1.3'
 gem 'jquery-rails'
 gem 'popper_js', '~> 2.9.3'
 ```
 
-Do `bundle install` in terminal
+###### `terminal`
 
-###### In `stylesheets`
+`bundle install`
+
+###### `stylesheets`
 
 - Create `main.scss` file in the same directory
 - Rename `application.css` -> `application.scss` & add
@@ -79,7 +86,7 @@ Do `bundle install` in terminal
 @import 'main';
 ```
 
-###### In `application.js` add
+###### `application.js`
 
 ```js
 //= require jquery3
@@ -90,7 +97,7 @@ Do `bundle install` in terminal
 //= require_tree .
 ```
 
-#### Add `local-time` for displaying local time
+### Add `local-time` for displaying local time
 
 `./bin/importmap pin local-time` in terminal
 

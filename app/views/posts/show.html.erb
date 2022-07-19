@@ -6,13 +6,13 @@
 <p>
   <%= @post.body %>
 </p>
-<div>
-  <%= link_to "Edit this post", edit_post_path(@post) %> |
-  <%= link_to "Back to posts", posts_path %>
-
-  <%= button_to "Destroy this post", @post, method: :delete %>
+<small>
+  Posted <%= time_tag @post.created_at, "data-local":"time-ago" %>
+</small>
+<div class="d-flex mt-4">
+  <%= link_to "Edit this post", edit_post_path(@post), class:"btn btn-outline-primary me-3" %>
+  <%= button_to "Destroy this post", @post, method: :delete, class:"btn btn-outline-danger" %>
 </div>
-<%= render @post %>
 
 <%= render 'posts/comments', post: @post %>
 

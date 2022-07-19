@@ -1,5 +1,9 @@
-<div id="<%= dom_id(comment) %>">
-    <%= comment.content %>
-    - <%= comment.created_at %>
-    <%= button_to "Delete", post_comment_path(@post.id, comment.id), method: :delete %>
+<div id="<%= dom_id(comment) %>" class="my-3">
+    <div><%= comment.content %></div>
+    <small class="d-flex">
+        <span><%= time_tag comment.created_at, "data-local":"time-ago" %></span>
+        <span class="mx-1">·</span>
+        <%= button_to "Delete", post_comment_path(@post.id, comment.id), method: :delete, class: "link-primary link-btn" %>
+    </small>
+    <hr>
 </div>

@@ -1,10 +1,8 @@
 <%= form_with(model: [ post, Comment.new ]) do |form| %>
 
-    <div>
-        Write comment:
-    </div>
-    <%= form.text_area :content %>
-    <div>
-        <%= form.submit %>
+    <h4>Comment</h4>
+    <%= form.text_area :content, class:"form-control" %>
+    <div class="mt-3">
+        <%= form.submit "Submit", class:"btn btn-outline-primary" %>
     </div>
 <% end %>
