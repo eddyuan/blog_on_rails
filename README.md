@@ -6,11 +6,11 @@ In terminal
 `rails new blog_on_rails`
 `bundle install` (for windows)
 
-#### Generate Post scaffold (Models, Controllers, Views etc)
+#### Generate `Posts` scaffold (Models, Controllers, Views etc)
 
 In terminal `rails generate scaffold post title:string body:text`
 
-#### Generate comment resource
+#### Generate `Comments` resource
 
 In terminal `rails g resource comment post:references content:text`
 
@@ -39,7 +39,8 @@ end
 
 #### Add `faker` for seeding
 
-`gem "faker", "~> 2.11"` in `Gemfile` then
+`gem "faker", "~> 2.11"` in `Gemfile`
+
 `bundle install` in terminal
 
 #### Add boostrap
