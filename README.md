@@ -6,15 +6,15 @@ In terminal
 `rails new blog_on_rails`
 `bundle install` (for windows)
 
-## Generate Post scaffold (Models, Controllers, Views etc)
+#### Generate Post scaffold (Models, Controllers, Views etc)
 
 In terminal `rails generate scaffold post title:string body:text`
 
-## Generate comment resource
+#### Generate comment resource
 
 In terminal `rails g resource comment post:references content:text`
 
-## Edit `post.rb` Model to include `comments` and validation
+#### Edit `post.rb` Model to include `comments` and validation
 
 ```rb
 validates(:title,
@@ -24,7 +24,7 @@ validates :body, presence: true, length: { minimum: 50 }
 has_many :comments
 ```
 
-## Edit `routes.rb` to make `posts` & `comments` work together & set the root
+#### Edit `routes.rb` to make `posts` & `comments` work together & set the root
 
 ```rb
 root "posts#index"
@@ -33,16 +33,16 @@ resources :posts do
 end
 ```
 
-## Database Migration
+#### Database Migration
 
 `rails db:migrate`
 
-## Add `faker` for seeding
+#### Add `faker` for seeding
 
 `gem "faker", "~> 2.11"` in `Gemfile` then
 `bundle install` in terminal
 
-## Add boostrap
+#### Add boostrap
 
 ###### In Gemfile
 
