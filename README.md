@@ -76,11 +76,11 @@ gem 'popper_js', '~> 2.9.3'
 
 #### Add `local-time` for displaying local time
 
-in terminal
-`./bin/importmap pin local-time`
-this will add pin to `importmap.rb` cdn
+`./bin/importmap pin local-time` in terminal
 
-import LocalTime in `application.js`
+this will add pin to `importmap.rb` from cdn
+
+In `application.js` add
 
 ```
 import LocalTime from "local-time"
