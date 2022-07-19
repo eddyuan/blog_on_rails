@@ -1,0 +1,5 @@
+<div id="<%= dom_id(comment) %>">
+    <%= comment.content %>
+    - <%= comment.created_at %>
+    <%= button_to "Delete", post_comment_path(@post.id, comment.id), method: :delete %>
+</div>

@@ -1,0 +1,12 @@
+a.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.ellipsis-4 {
+    width:100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
