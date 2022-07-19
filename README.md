@@ -45,7 +45,7 @@ end
 
 #### Add boostrap
 
-###### In Gemfile
+###### In `Gemfile`
 
 ```
 gem 'bootstrap', '~> 5.1.3'
@@ -53,10 +53,10 @@ gem 'jquery-rails'
 gem 'popper_js', '~> 2.9.3'
 ```
 
-###### In SCSS
+###### In `stylesheets`
 
-- Create main.scss file in the same directory
-- Rename application.css -> application.scss and add
+- Create `main.scss` file in the same directory
+- Rename `application.css` -> `application.scss` & add
 
 ```scss
 @import "bootstrap";
@@ -74,7 +74,7 @@ gem 'popper_js', '~> 2.9.3'
 //= require_tree .
 ```
 
-## Add `local-time` for displaying local time
+#### Add `local-time` for displaying local time
 
 in terminal
 `./bin/importmap pin local-time`
