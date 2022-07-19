@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby "3.1.2"
+ruby "3.0.0"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.3", ">= 7.0.3.1"
@@ -36,10 +36,10 @@ gem "jbuilder"
 # Use Active Model has_secure_password [https://guides.rubyonrails.org/active_model_basics.html#securepassword]
 # gem "bcrypt", "~> 3.1.7"
 
-# For macos
-# gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
+
 
 # For windows
+# gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem 'tzinfo-data'
 gem 'tzinfo'
 
