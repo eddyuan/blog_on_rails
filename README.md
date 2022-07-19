@@ -53,7 +53,7 @@ gem 'jquery-rails'
 gem 'popper_js', '~> 2.9.3'
 ```
 
-###### Do `bundle install` in terminal
+Do `bundle install` in terminal
 
 ###### In `stylesheets`
 
