@@ -43,7 +43,7 @@ end
 
 `bundle install` in terminal
 
-#### Add boostrap
+### Add boostrap
 
 ###### In `Gemfile`
 
