@@ -2,8 +2,18 @@
 
 ## New project
 
-In terminal
+###### `Terminal`
+
 `rails new blog_on_rails`
+
+###### For windows in `Gemfile` use
+
+```
+gem 'tzinfo-data'
+gem 'tzinfo'
+```
+
+then do
 `bundle install` (for windows)
 
 #### Generate `Posts` scaffold (Models, Controllers, Views etc)
@@ -39,13 +49,17 @@ end
 
 #### Add `faker` for seeding
 
-`gem "faker", "~> 2.11"` in `Gemfile`
+###### `Gemfile`
 
-`bundle install` in terminal
+`gem "faker", "~> 2.11"`
+
+###### `terminal`
+
+`bundle install`
 
 ### Add boostrap
 
-###### In `Gemfile`
+###### `Gemfile`
 
 ```
 gem 'bootstrap', '~> 5.1.3'
@@ -61,8 +75,8 @@ Do `bundle install` in terminal
 - Rename `application.css` -> `application.scss` & add
 
 ```scss
-@import "bootstrap";
-@import "main";
+@import 'bootstrap';
+@import 'main';
 ```
 
 ###### In `application.js` add
